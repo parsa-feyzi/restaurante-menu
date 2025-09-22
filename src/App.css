@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "bahnschrift";
+  transition: all 200ms;
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -ms-transition: all 200ms;
+  -o-transition: all 200ms;
+}
+
+.addedToCart {
+  animation: cartAction 600ms forwards alternate;
+  -webkit-animation: cartAction 600ms forwards alternate;
+}
+
+.item_cart_container:hover .item_cart_remove {
+  transition: all 400ms;
+  display: block;
+  -webkit-transition: all 400ms;
+  -moz-transition: all 400ms;
+  -ms-transition: all 400ms;
+  -o-transition: all 400ms;
+}
+
+.item_cart_remove {
+  animation: showRemove 300ms;
+  display: none;
+  -webkit-animation: showRemove 300ms;
+}
+
+.cart_items_container::-webkit-scrollbar {
+  width: 0;
+}
+
+@keyframes cartAction {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateX(-5px);
+    -webkit-transform: translateX(-5px);
+    -moz-transform: translateX(-5px);
+    -ms-transform: translateX(-5px);
+    -o-transform: translateX(-5px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(30px);
+    -webkit-transform: translateX(30px);
+    -moz-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    -o-transform: translateX(30px);
+  }
+}
+
+@keyframes showRemove {
+  0% {
+    scale: 0.5;
+    opacity: 0;
+  }
+
+  100% {
+    scale: 1;
+    opacity: 1;
+  }
+}
