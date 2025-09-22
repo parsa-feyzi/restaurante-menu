@@ -34,7 +34,7 @@ export default function Cart() {
     <div
       className={`${
         showCart ? "" : "translate-x-[100vw]"
-      } w-screen overflow-hidden text-pry-dark dark:text-pry z-20 max-w-[350px] fixed right-0 top-16 bg-pry-s/80 dark:bg-pry-s-dark/80 backdrop-blur-md dark:backdrop-blur-lg h-[90.5vh]`}
+      } w-screen overflow-hidden text-pry-dark dark:text-pry z-20 max-w-[350px] fixed right-0 top-16 bg-pry-s/100 dark:bg-pry-s-dark/80 backdrop-blur-md dark:backdrop-blur-lg h-[90.5vh]`}
     >
       {cartItems.length ? (
         <div className="">
